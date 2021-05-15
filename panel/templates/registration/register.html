@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+      <form>
+        <div class="container">
+          <h1>Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          {% csrf_token %}
+          <label for="username"><b>usernamename</b></label>
+          <input type="text" placeholder="Enter yourname" name="username" id="username" required>
+          <br>
+          <label for="phone"><b>phone</b></label>
+          <input type="text" placeholder="Enter yournumber" name="phone" id="phone" required>
+          <br>
+          <label for="department"><b>department</b></label>
+          <input type="text" placeholder="Enter department" name="department" id="department" required>
+          <br>
+          <label for="age"><b>age</b></label>
+          <input type="text" placeholder="Enter yourage" name="age" id="age" required>
+          <br>
+          <label for="address"><b>address</b></label>
+          <input type="text" placeholder="Enter address" name="address" id="address" required>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          <br>
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+          <br>
+          
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+      </form>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+      <script src="static/line.js"></script>
+      <script src="static/sample.js"></script>
+      <script src="static/pie.js"></script>
+
+</body>
+</html> 
